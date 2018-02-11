@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Specifications.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    	算是Index，用作指引，增删查改如何实现。
+    	1.src
+    		-Dao：
+    			*IAsset：接口，具体接入查看，一般不做更改
+    			*AssetDao：完成接口给的功能，执行数据库操作
+    				ps：新增操作单独的control运行完成
+    		-DB：
+    			*DBHelper：数据库通用类，处理数据库的基本操作，具体接入，一般不做更改
+    		-Model：
+    			*AssetName：存放数据库字段，如果数据库要新增值的时候需要在里面声明，
+    			然后在Dao。AssetDao中添加相应的语句。
+    	2.WebRoot
+    		-Page部分：
+    			*addpage.jsp
+    			*Edit.jsp
+    			*Home.jsp(1.1)
+    		-Control部分
+    			*addcontrol.jsp
+    			*DeleteControl.jsp
+    			*EditControl.jsp
+  </body>
+</html>
